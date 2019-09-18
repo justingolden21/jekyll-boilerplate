@@ -1,0 +1,15 @@
+<footer class="page-footer">
+	<br>
+
+	{% for item in site.data.social %}
+		<a title="{{ item.name }}" href="{{ item.url }}" target="_blank">
+			<i class="{{ item.icon }} fa-2x social-icon"></i>
+		</a>
+		&nbsp;
+	{% endfor %}
+
+	<div class="text-center text-uppercase">
+		&copy; Copyright 2019. All Rights Reserved.
+		<br><br>
+	</div>
+</footer>

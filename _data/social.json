@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Facebook",
+		"url": "https://www.facebook.com/template/",
+		"icon": "fab fa-facebook"
+	},
+	{
+		"name": "Twitter",
+		"url": "https://twitter.com/template",
+		"icon": "fab fa-twitter"
+	},
+	{
+		"name": "YouTube",
+		"url": "https://www.youtube.com/channel/template",
+		"icon": "fab fa-youtube"
+	}
+]

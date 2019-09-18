@@ -1,0 +1,69 @@
+<nav class="navbar fixed-top navbar-lg navbar-dark bg-dark" role="navigation">
+	<a id="home-img" class="navbar-brand" href="#">
+		<img
+
+			src="{{ site.baseurl }}/assets/images/logo.png"
+
+		{% if page.active!='Home' %}
+			onclick="window.open('{{ site.baseurl }}./index.html', '_self');"
+		{% endif %}
+		width="64px">
+	</a>
+
+
+	{% if page.active!='Home'%}
+		<b style="color:#fff">{{page.title}}</b>
+	{% endif %}
+
+	<form class="form-inline ml-auto">
+		<div class="input-group">
+			<input id="search" class="form-control" type="search" placeholder="Search our stuff..." aria-label="Search">
+			<div class="input-group-append">
+				<button class="btn btn-light" type="submit" title="Search"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+	</form>
+
+	<button id="menu-btn" class="navbar-toggler navbar-dark" type="button" title="Menu" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+		<i id="menu-icon" class="fas fa-bars"></i>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar-content">
+		<ul class="navbar-nav mr-auto">
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<li class="nav-item">
+						<a class="nav-link {% if page.active=='Home' %} active {% endif %}"
+						{% if page.active!='Home' %}
+							href="{{ site.baseurl }}/index.html"
+						{% endif %}
+						>Home</a>
+					</li>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<li class="nav-item">
+						<a class="nav-link {% if page.active=='About' %} active {% endif %}"
+							href="{{ site.baseurl }}/about.html">About</a>
+					</li>
+				</div>
+	
+				<div class="col-sm-6 col-md-4">
+					<li class="nav-item">
+						<a class="nav-link {% if page.active=='Contact' %} active {% endif %}"
+							href="{{ site.baseurl }}/contact.html">Contact</a>
+					</li>
+				</div>
+				
+			</div>
+		</ul>
+
+	</div>
+</nav>
+
+{% if page.title %}
+	<div class="jumbotron text-center">
+		
+	<h1><br><b> {{ page.title }} </b></h1>
+	</div>
+{% endif %}
