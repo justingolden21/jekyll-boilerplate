@@ -2,6 +2,10 @@
 
 Jekyll Bootstrap Boilerplate Website by Justin Golden
 
+# Live Demo
+
+https://justingolden21.github.io/jekyll-boilerplate/
+
 # Instructions
 
 1. Make sure you have [Jekyll](https://jekyllrb.com/) installed first.
