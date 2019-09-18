@@ -1,4 +1,4 @@
-<img src="assets/images/logo/logo.png" width="64px">
+<img src="assets/images/logo.png" width="64px">
 
 Jekyll Bootstrap Boilerplate Website by Justin Golden
 
